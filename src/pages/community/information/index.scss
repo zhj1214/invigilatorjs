@@ -1,0 +1,103 @@
+.information-page {
+  height: calc(var(--vh) - 192rpx - env(safe-area-inset-bottom) - var(--tab-bar-height));
+
+  /*  #ifdef  MP-WEIXIN  */
+  padding-top: 23rpx;
+  /*  #endif  */
+  .news-tab-box {
+    padding: 0 18rpx;
+    height: 116rpx;
+
+    .news-category {
+      height: 100rpx;
+    }
+  }
+
+  .scroll-list {
+    box-sizing: border-box;
+
+    /*  #ifdef  H5  */
+    height: calc(100% - 116rpx);
+    /*  #endif  */
+
+    /*  #ifdef  MP-WEIXIN  */
+    height: calc(100vh - 188rpx - 168rpx);
+    /*  #endif  */
+  }
+
+  .list {
+    padding: 0 32rpx 80rpx;
+
+    .list-item {
+      margin-bottom: 32rpx;
+
+      .big-card {
+        width: 100%;
+        height: 50vw;
+        position: relative;
+
+        .image {
+          border-radius: 4rpx;
+          width: 100%;
+          height: 100%;
+        }
+
+        .title {
+          width: 100%;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 100rpx;
+          background: rgb(216 216 216 / 10%);
+          backdrop-filter: blur(5px);
+          color: $uni-text-color-inverse;
+          display: flex;
+          align-items: center;
+          padding: 0 12rpx;
+        }
+
+        .label {
+          position: absolute;
+          top: 40rpx;
+          right: 0;
+          max-width: 120rpx;
+          min-width: 100rpx;
+          padding: 0 8rpx 0 16rpx;
+          height: 46rpx;
+          background: #00e5ff;
+          border-radius: 100rpx 0 0 100rpx;
+          opacity: 0.8;
+          text-align: center;
+          line-height: 46rpx;
+          color: #fff;
+          font-size: $uni-font-size-sm;
+          font-weight: 500;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .news-list-none {
+      height: 200rpx;
+      text-align: center;
+      position: relative;
+
+      &-text {
+        font-size: 26rpx;
+        font-weight: 400;
+        color: #999;
+        position: absolute;
+        bottom: 60rpx;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .news-list-nomore {
+      text-align: center;
+      color: #999;
+    }
+  }
+}

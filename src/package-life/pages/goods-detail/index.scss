@@ -1,0 +1,200 @@
+.goods-detail-page {
+  background-color: #f2f3f3;
+  padding-bottom: calc(120rpx + env(safe-area-inset-bottom));
+
+  // 返回按钮
+  .back-icon {
+    position: absolute;
+
+    /* #ifdef MP-WEIXIN */
+    top: 44px;
+    /* #endif */
+
+    /* #ifdef H5 */
+    top: 31rpx;
+    /* #endif */
+    left: 36rpx;
+    width: 72rpx;
+    height: 72rpx;
+    z-index: 1;
+  }
+
+  // 操作项：优惠、选择、参数
+  .wrap-options {
+    width: 100%;
+    margin: 13rpx 0;
+    background-color: white;
+
+    & > .item {
+      width: 100%;
+      height: 120rpx;
+      line-height: 120rpx;
+      display: flex;
+
+      & > .left {
+        width: 136rpx;
+        text-align: center;
+      }
+
+      & > .right {
+        width: calc(100% - 136rpx);
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1rpx solid #e4e7ea;
+        overflow: hidden;
+
+        & > .desc {
+          font-size: 28rpx;
+          color: #292c2e;
+          flex: 1;
+        }
+
+        & > .wrap-btn {
+          font-size: 30rpx;
+          color: #4e6175;
+          display: flex;
+          align-items: center;
+
+          .icon-right {
+            width: 48rpx;
+            height: 48rpx;
+            margin-right: 40rpx;
+          }
+        }
+
+        .freight-template {
+          width: calc(100% - 88rpx);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          line-height: initial;
+          font-size: 28rpx;
+
+          .shipping-address {
+            color: #bababa;
+            font-size: 24rpx;
+            margin-top: 10rpx;
+          }
+        }
+      }
+
+      &:last-of-type .right {
+        border-bottom: none;
+      }
+    }
+  }
+
+  // 商品评价容器
+  .wrap-goods-evaluation {
+    margin: 13rpx 0;
+  }
+
+  .wrap-goods-question {
+    margin: 13rpx 0;
+  }
+
+  // 商品详情内容容器
+  .wrap-goods-detail {
+    background-color: white;
+    padding: 40rpx 40rpx 0;
+    overflow: hidden;
+    word-break: break-all;
+  }
+
+  // 底部按钮组+购物车
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: calc(120rpx + env(safe-area-inset-bottom));
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40rpx env(safe-area-inset-bottom);
+    border-top: 1rpx solid #e4e7ea;
+
+    // 已下架的提示
+    .not-for-sale {
+      width: 100vw;
+      height: 80rpx;
+      line-height: 80rpx;
+      color: $uni-text-color-inverse;
+      text-align: center;
+      font-size: 30rpx;
+      background-color: #92969a;
+      position: absolute;
+      left: 0;
+      top: -80rpx;
+    }
+
+    // 购物车
+    .wrap-cart {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      font-size: 20rpx;
+      color: #292c2e;
+      position: relative;
+
+      .shopping-cart-img {
+        width: 52rpx;
+        height: 52rpx;
+      }
+
+      .cart-number {
+        width: 30rpx;
+        height: 30rpx;
+        position: absolute;
+        top: -1rpx;
+        left: -1rpx;
+        line-height: 30rpx;
+        text-align: center;
+        background-color: #c6001f;
+        border-radius: 50%;
+        color: $uni-text-color-inverse;
+      }
+    }
+
+    // 按钮组
+    .wrap-btn {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+
+      .btn {
+        width: 232rpx;
+        height: 84rpx;
+        line-height: 82rpx;
+        text-align: center;
+        border: 1rpx solid #1a1a1a;
+        border-radius: 1rpx;
+        font-size: 28rpx;
+        color: #1a1a1a;
+      }
+
+      .btn-buy {
+        margin-left: 36rpx;
+        background-color: #1a1a1a;
+        color: white;
+      }
+
+      .full-width {
+        flex: 1;
+      }
+
+      &.disabled-all-btn {
+        .add-cart {
+          border: 1rpx solid #bababa;
+          color: #bababa;
+        }
+
+        .btn-buy {
+          border: 1rpx solid #bababa;
+          background-color: #bababa;
+        }
+      }
+    }
+  }
+}

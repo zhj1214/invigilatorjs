@@ -1,31 +1,99 @@
 {
-  "name": "abnormal",
-  "version": "0.0.7",
-  "description": "数跑监控平台sdk",
-  "main": "out/index.js",
-  "typings": "out/index",
+  "name": "fe-mall-h5",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "pub": "pnpm build;npm publish --registry=http://npm.supaur.top",
-    "build": "tsup",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preinstall": "npx only-allow yarn",
+    "start": "yarn sit",
+    "dev": "node scripts/dev dev:h5",
+    "sit": "node scripts/dev sit:h5",
+    "uat": "node scripts/dev uat:h5",
+    "dev:weixin": "node scripts/dev dev:mp-weixin",
+    "sit:weixin": "node scripts/dev sit:mp-weixin",
+    "uat:weixin": "node scripts/dev uat:mp-weixin",
+    "build:dev": "node scripts/build dev:h5",
+    "build:sit": "node scripts/build sit:h5",
+    "build:uat": "node scripts/build uat:h5",
+    "build:dev:weixin": "node scripts/build dev:mp-weixin --upload",
+    "build:sit:weixin": "node scripts/build sit:mp-weixin --upload",
+    "build:uat:weixin": "node scripts/build uat:mp-weixin",
+    "prepare": "husky install",
+    "build:h5": "node scripts/build sit:h5",
+    "build:h6": "uni build -p uat:mp-weixin",
+    "lint": "node lint/index.js",
+    "lint:commit": "node lint/index.js --commit"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@gitlab01.supaur.cn:core-frame/front/supaur-tools-platform/abnormal/abnormal-sdk.git"
+  "lint-staged": {
+    "*.{ts,js,vue}": [
+      "eslint --fix"
+    ],
+    "*.{html,vue,css,sass,scss}": [
+      "stylelint --fix"
+    ]
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "3.0.0-alpha-3050120220706002",
+    "@dcloudio/uni-app-plus": "3.0.0-alpha-3050120220706002",
+    "@dcloudio/uni-app-vue": "3.0.0-alpha-3050120220706002",
+    "@dcloudio/uni-cloud": "3.0.0-alpha-3050120220706002",
+    "@dcloudio/uni-components": "3.0.0-alpha-3050120220706002",
+    "@dcloudio/uni-h5": "3.0.0-alpha-3050120220706002",
+    "@dcloudio/uni-h5-vue": "3.0.0-alpha-3050120220706002",
+    "@dcloudio/uni-i18n": "3.0.0-alpha-3050120220706002",
+    "@dcloudio/uni-mp-weixin": "3.0.0-alpha-3050120220706002",
+    "@dcloudio/uni-shared": "3.0.0-alpha-3050120220706002",
+    "@dcloudio/uni-stat": "3.0.0-alpha-3050120220706002",
+    "@supaur-works/sa-ui": "0.0.3",
+    "@types/ali-oss": "^6.16.2",
+    "abnormal": "0.0.6",
+    "dayjs": "^1.10.7",
+    "decimal.js": "^10.3.1",
+    "pinia": "^2.0.14",
+    "tracekit": "^0.4.6",
+    "vue": "^3.2.37",
+    "vue-router": "^4.1.1"
   },
   "devDependencies": {
-    "@types/uni-app": "^1.4.4",
-    "eslint": "^8.27.0",
-    "miniprogram-api-typings": "^3.9.0",
-    "prettier": "^2.7.1",
-    "tsup": "^6.0.1",
-    "typescript": "^4.7.2",
-    "vue": "^3.2.41"
+    "@commitlint/cli": "^13.2.1",
+    "@commitlint/config-conventional": "^13.2.0",
+    "@dcloudio/types": "^3.0.7",
+    "@dcloudio/uni-app-vite": "3.0.0-alpha-3050120220706002",
+    "@dcloudio/uni-automator": "3.0.0-alpha-3050120220706002",
+    "@dcloudio/uni-cli-shared": "3.0.0-alpha-3050120220706002",
+    "@dcloudio/uni-h5-vite": "3.0.0-alpha-3050120220706002",
+    "@dcloudio/vite-plugin-uni": "3.0.0-alpha-3050120220706002",
+    "@supaur-works/eslint-plugin": "^0.0.3",
+    "@types/node": "^16.11.6",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "@vue/server-renderer": "^3.2.37",
+    "@vue/shared": "^3.2.37",
+    "autoprefixer": "^10.4.0",
+    "colors-console": "^1.0.3",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.0",
+    "jsonc-eslint-parser": "^2.1.0",
+    "lint-staged": "^11.2.6",
+    "miniprogram-ci": "^1.6.1",
+    "picocolors": "^1.0.0",
+    "postcss-html": "^1.4.1",
+    "postcss-scss": "^4.0.4",
+    "prettier": "^2.4.1",
+    "requireindex": "^1.2.0",
+    "sass": "^1.43.4",
+    "stylelint": "^14.8.2",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "unplugin-vue-components": "^0.22.4",
+    "vite": "2.9.9",
+    "vite-applet-ci": "0.1.7",
+    "vite-plugin-progress": "^0.0.6",
+    "vite-plugin-vue-setup-extend": "^0.4.0",
+    "vue-tsc": "^0.29.8"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "flyio": "^0.6.14",
-    "tracekit": "^0.4.6"
+  "engines": {
+    "node": "14.17.5"
   }
 }

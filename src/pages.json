@@ -1,0 +1,903 @@
+{
+  "pages": [
+    {
+      "path": "pages/car/car",
+      "style": {
+        "navigationBarTitleText": "购车",
+        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/life/index",
+      "style": {
+        "navigationBarTitleText": "生活",
+        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/mine/index",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "enablePullDownRefresh": true,
+        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/community/community",
+      "style": {
+        "navigationBarTitleText": "社区",
+        "enablePullDownRefresh": false,
+        "disableScroll": true,
+        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/login/index",
+      "style": {
+        "navigationBarTitleText": "登录",
+        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/lowcode/index",
+      "style": {
+        "navigationBarTitleText": "低代码",
+        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationStyle": "custom"
+      }
+    },
+    // #ifdef MP-WEIXIN
+    {
+      "path": "pages/register/register",
+      "style": {
+        "navigationBarTitleText": "注册",
+        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/register/register-success",
+      "style": {
+        "navigationBarTitleText": "注册成功",
+        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#ffffff"
+      }
+    }
+    // #endif
+  ],
+  "globalStyle": {
+    "pageOrientation": "portrait",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "数字商城",
+    "navigationBarBackgroundColor": "#252525",
+    "backgroundColor": "#F8F8F8",
+    "backgroundColorTop": "#F4F5F6",
+    "backgroundColorBottom": "#F4F5F6"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#4E6175",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/car/car",
+        "text": "购车",
+        "iconPath": "/static/car.png",
+        "selectedIconPath": "/static/car-active.png"
+      },
+      {
+        "pagePath": "pages/life/index",
+        "text": "生活",
+        "iconPath": "/static/life.png",
+        "selectedIconPath": "/static/life-active.png"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "text": "社区",
+        "iconPath": "/static/community.png",
+        "selectedIconPath": "/static/community-active.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "/static/mine.png",
+        "selectedIconPath": "/static/mine-active.png"
+      },
+      {
+        "pagePath": "pages/lowcode/index",
+        "text": "低代码",
+        "iconPath": "/static/mine.png",
+        "selectedIconPath": "/static/mine-active.png"
+      }
+    ]
+  },
+  "subPackages": [
+    {
+      "root": "package-car/pages",
+      "pages": [
+        {
+          "path": "dealer-list/index",
+          "style": {
+            "navigationBarTitleText": "经销商信息",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "enablePullDownRefresh": true,
+            "onReachBottomDistance": 100
+          }
+        },
+        {
+          "path": "test-drive/index",
+          "style": {
+            "navigationBarTitleText": "预约试驾",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "choice-stores/index",
+          "style": {
+            "navigationBarTitleText": "门店选择",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "privacy-agreement/privacy-agreement",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "appointment-complete/index",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "select-vehicle/index",
+          "style": {
+            "navigationBarTitleText": "购车",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "series-detail/index",
+          "style": {
+            "navigationBarTitleText": "车系详情",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "vehicle-setting/index",
+          "style": {
+            "navigationBarTitleText": "车辆配置器",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "packages-detail/index",
+          "style": {
+            "navigationBarTitleText": "选装包详情",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "preview/index",
+          "style": {
+            "navigationBarTitleText": "配置总览",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "purchase/index",
+          "style": {
+            "navigationBarTitleText": "预订爱车",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "select-provider/index",
+          "style": {
+            "navigationBarTitleText": "选择服务商",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "agreements/intent-and-conditions",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "agreements/purchase-agreement",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "switch-tenants/index",
+          "style": {
+            "navigationBarTitleText": "切换租户",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        }
+      ]
+    },
+    {
+      "root": "package-life/pages",
+      "pages": [
+        {
+          "path": "goods-list/index",
+          "style": {
+            "navigationBarTitleText": " ",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "ask-everyone-list/index",
+          "style": {
+            "navigationBarTitleText": "问答列表",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "ask-everyone-detail/index",
+          "style": {
+            "navigationBarTitleText": "问答",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "ask-everyone-published/index",
+          "style": {
+            "navigationBarTitleText": "发布问题",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "goods-search/index",
+          "style": {
+            "navigationBarTitleText": "搜索",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "goods-detail/index",
+          "style": {
+            "navigationBarTitleText": " ",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "goods-settle/index",
+          "style": {
+            "navigationBarTitleText": " ",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "product-assess-list/index",
+          "style": {
+            "navigationBarTitleText": "商品评价",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "store-list/index",
+          "style": {
+            "navigationBarTitleText": "门店选择",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "payment/index",
+          "style": {
+            "navigationBarTitleText": "支付",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        // #ifdef H5
+        {
+          "path": "payment-success/index",
+          "style": {
+            "navigationBarTitleText": "支付成功",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationStyle": "custom"
+          }
+        },
+        // #endif
+        // #ifdef MP-WEIXIN
+        {
+          "path": "payment-success/index",
+          "style": {
+            "navigationBarTitleText": "支付成功",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        }
+        // #endif
+      ]
+    },
+    {
+      "root": "package-community/pages",
+      "pages": [
+        {
+          "path": "news-detail/news-detail",
+          "style": {
+            "navigationBarTitleText": "资讯详情",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "h5": {
+              "titleNView": false
+            }
+          }
+        },
+        {
+          "path": "group-home/group-home",
+          "style": {
+            "navigationBarTitleText": "圈子首页",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "group-members/group-members",
+          "style": {
+            "navigationBarTitleText": "圈内好友",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "group-members-search/group-members-search",
+          "style": {
+            "navigationBarTitleText": "搜索好友",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "all-group/all-group",
+          "style": {
+            "navigationBarTitleText": "全部圈子",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "all-topic/all-topic",
+          "style": {
+            "navigationBarTitleText": "话题广场",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "content-detail/content-detail",
+          "style": {
+            "navigationBarTitleText": "内容详情",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "user-home/user-home",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "user-list/user-list",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "user-groups/user-groups",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "topic-home/topic-home",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "my-content-list/my-content-list",
+          "style": {
+            "navigationBarTitleText": "我的发布",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "group-manage/group-manage",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "group-record/group-record",
+          "style": {
+            "navigationBarTitleText": "我的圈子",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "my-follow/my-follow",
+          "style": {
+            "navigationBarTitleText": "我的关注",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "content-launch/content-launch",
+          "style": {
+            "navigationBarTitleText": "发布",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "choose-topic/choose-topic",
+          "style": {
+            "navigationBarTitleText": "选择话题",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "choose-location/choose-location",
+          "style": {
+            "navigationBarTitleText": "发表动态",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "audit-rejection/audit-rejection",
+          "style": {
+            "navigationBarTitleText": "审核不通过",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "group-user/group-user",
+          "style": {
+            "navigationBarTitleText": "圈内成员列表",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "keywords-search-criteria/keywords-search-criteria",
+          "style": {
+            "navigationBarTitleText": "搜索",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "keywords-search-result/keywords-search-result",
+          "style": {
+            "navigationBarTitleText": "搜索",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "manage-record/manage-record",
+          "style": {
+            "navigationBarTitleText": "圈内成员列表",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "web-view/index",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        }
+      ]
+    },
+    {
+      "root": "package-mine/pages",
+      "pages": [
+        {
+          "path": "user-point/index",
+          "style": {
+            "navigationBarTitleText": "我的积分",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "point-detail/index",
+          "style": {
+            "navigationBarTitleText": "积分明细",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "point-rule/index",
+          "style": {
+            "navigationBarTitleText": "积分规则",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "wish-list/index",
+          "style": {
+            "navigationBarTitleText": "心愿单",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "shopping-cart/index",
+          "style": {
+            "enablePullDownRefresh": true,
+            "navigationBarTitleText": "购物车",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "order-type/index",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "order-list-life/index",
+          "style": {
+            "enablePullDownRefresh": true,
+            "navigationBarTitleText": "生活订单",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "order-detail-life/index",
+          "style": {
+            "navigationBarTitleText": "订单详情",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "order-list-car/index",
+          "style": {
+            "enablePullDownRefresh": true,
+            "navigationBarTitleText": "购车订单",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "order-detail-car/index",
+          "style": {
+            "navigationBarTitleText": "订单详情",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "after-sale-list-life/index",
+          "style": {
+            "enablePullDownRefresh": true,
+            "navigationBarTitleText": "生活售后",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "after-sale-list-car/index",
+          "style": {
+            "enablePullDownRefresh": true,
+            "navigationBarTitleText": "购车售后",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "after-sale-type/index",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "evaluation-center/index",
+          "style": {
+            "navigationBarTitleText": "评价中心",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "evaluation-list/index",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "evaluation-detail/index",
+          "style": {
+            "navigationBarTitleText": "商品评价",
+            "enablePullDownRefresh": true,
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "evaluation-published/index",
+          "style": {
+            "navigationBarTitleText": "发表评价",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "published-successful/index",
+          "style": {
+            "navigationBarTitleText": "评价成功",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "coupon/index",
+          "style": {
+            "navigationBarTitleText": "卡券",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "coupon-goods/index",
+          "style": {
+            "navigationBarTitleText": "可用商品",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "card-detail/index",
+          "style": {
+            "navigationBarTitleText": "卡券详情",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "test-drive-itinerary/index",
+          "style": {
+            "navigationBarTitleText": "试驾行程单",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "itinerary-detail/index",
+          "style": {
+            "navigationBarTitleText": "行程单",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "setting/index",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "address-list/index",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "address-add-edit/index",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "agreement/privacy-agreement",
+          "style": {
+            "navigationBarTitleText": "隐私条款",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "agreement/user-agreement",
+          "style": {
+            "navigationBarTitleText": "用户协议",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "user-info/index",
+          "style": {
+            "navigationBarTitleText": "编辑资料",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "edit-username/index",
+          "style": {
+            "navigationBarTitleText": "修改用户名",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "order-delivery-list/index",
+          "style": {
+            "navigationBarTitleText": "订单列表",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "order-delivery/index",
+          "style": {
+            "navigationBarTitleText": "订单物流",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "apply-for-after-sale/index",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "after-sale-succuss/index",
+          "style": {
+            "navigationBarTitleText": "提交成功",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "after-sale-detail/index",
+          "style": {
+            "navigationBarTitleText": "售后详情",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "member-grade/index",
+          "style": {
+            "navigationBarTitleText": "会员等级",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "growth-rule/index",
+          "style": {
+            "navigationBarTitleText": "成长值规则",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "grade-detail/index",
+          "style": {
+            "navigationBarTitleText": "权益详情",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "medal/index",
+          "style": {
+            "navigationBarTitleText": "我的徽章",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "medal-share/index",
+          "style": {
+            "navigationBarTitleText": "分享图预览",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#ffffff",
+            "navigationStyle": "custom"
+          },
+          "usingComponents": {
+            "wxml-to-canvas": "wxml-to-canvas"
+          }
+        }
+      ]
+    }
+  ]
+}

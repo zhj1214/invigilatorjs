@@ -1,0 +1,85 @@
+.search-content {
+  width: 100%;
+  padding-bottom: 90rpx;
+
+  &-box {
+    background-color: #f2f3f3;
+    color: #292c2e;
+
+    .noData {
+      width: 100%;
+      color: #ccc;
+      padding-top: 20rpx;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .box-fixed {
+      position: sticky;
+      top: 0;
+      left: 0;
+    }
+
+    .search-box {
+      background-color: #fff;
+      padding: 40rpx;
+
+      ::v-deep .uni-searchbar__box {
+        padding: 40rpx 24rpx
+      }
+    }
+
+    .menus {
+      height: 100rpx;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      padding: 0 40rpx;
+      color: #92969A;
+
+      view {
+        font-size: 30rpx;
+      }
+
+      .active {
+        color: #292c2e;
+      }
+    }
+
+    .search-result {
+      &-item {
+        background-color: #fff;
+        padding: 0 40rpx;
+        margin-bottom: 24rpx;
+
+        &-header {
+          height: 100rpx;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #fff;
+          font-size: 32rpx;
+
+          .searchValue {
+            color: #537EAC;
+          }
+
+          .moreIcon {
+            font-size: 40rpx;
+            color: #696c6f;
+          }
+        }
+
+        &-content {
+          padding: 30rpx 0;
+          border-top: 1px solid #E4E7EA;
+
+          .navigator-hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "数字商城",
+  "description": "",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "mp-weixin": {
+    "appid": "wxbb7c62063a9ef9ff",
+    "setting": {
+      "urlCheck": false,
+      "es6": false,
+      "lazyCodeLoading": "requiredComponents"
+    },
+    "optimization": {
+      "subPackages": true
+    },
+    "permission": {
+      "scope.userLocation": {
+        "desc": "你的位置信息将用于适用门店的排序"
+      }
+    }
+  },
+  "h5": {
+    "rpx": true,
+    "unitPrecision": 3,
+    "router": {
+      "mode": "history",
+      "base": ""
+    },
+    "permission": {
+      "scope.userLocation": {
+        "desc": "你的位置信息将用于适用门店的排序"
+      }
+    },
+    "sdkConfigs": {
+      "maps": {
+        "qqmap": {
+          "key": "SG4BZ-G4ZCW-VDTRC-RQNA5-6VYBE-66BHZ"
+        }
+      }
+    }
+  }
+}

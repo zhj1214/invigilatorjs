@@ -1,0 +1,68 @@
+.topic-list {
+  .topic-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 104rpx;
+    margin-bottom: 46rpx;
+    padding-left: 32rpx;
+    padding-right: 24rpx;
+
+    .topic-logo {
+      width: 144rpx;
+      height: 106rpx;
+      border-radius: 2rpx;
+    }
+
+    .info {
+      flex: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0 48rpx 0 18rpx;
+
+      .topic-name {
+        font-size: 30rpx;
+        font-weight: 500;
+        display: flex;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+
+      .topic-sub {
+        font-size: 24rpx;
+        color: #92969a;
+
+        .text {
+          margin-right: 16rpx;
+        }
+      }
+    }
+
+    .follow-btn {
+      font-size: 26rpx;
+      background-color: #fff;
+      color: #92969a;
+      text-align: center;
+      margin: 0;
+      width: 135rpx;
+      height: 56rpx;
+      line-height: 56rpx;
+      border-radius: 2rpx;
+      border: 2rpx solid #f2f3f3;
+    }
+  }
+
+  .list-no-more {
+    width: 100%;
+    text-align: center;
+    font-size: 26rpx;
+    font-family: SourceHanSansSC-Normal, SourceHanSansSC;
+    font-weight: 400;
+    color: #909ca8;
+    padding-bottom: 50rpx;
+  }
+}

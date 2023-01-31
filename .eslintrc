@@ -1,0 +1,144 @@
+{
+  "overrides": [
+    {
+      "files": ["*.html"],
+      "plugins": ["html"]
+    },
+    {
+      "files": ["*.vue", "*.ts", "*.js"],
+      "extends": ["plugin:@supaur-works/supaur", "plugin:@supaur-works/vue", "plugin:@supaur-works/ts"],
+      "rules": {
+        "max-lines": "error",
+        "max-lines-per-function": "error",
+        "@supaur-works/valid-func-name": [
+          "error",
+          {
+            "includes": [
+              "delete",
+              "add",
+              "remove",
+              "update",
+              "search",
+              "get",
+              "change",
+              "valid",
+              "set",
+              "go",
+              "scroll",
+              "check",
+              "is",
+              "has",
+              "to",
+              "init",
+              "on",
+              "handle",
+              "reset",
+              "refresh",
+              "do",
+              "cancel",
+              "publish",
+              "answer",
+              "merge",
+              "request",
+              "upload",
+              "query",
+              "open",
+              "close",
+              "play",
+              "calc",
+              "format",
+              "use",
+              "pay",
+              "match",
+              "receive",
+              "clear",
+              "save",
+              "create"
+            ],
+            "excludes": [
+              "data",
+              "login",
+              "register",
+              "logout",
+              "success",
+              "fail",
+              "install",
+              "activated",
+              "beforeUnmount",
+              "breforeCreate",
+              "created",
+              "beforeMount",
+              "mounted",
+              "beforeUpdate",
+              "updated",
+              "beforeDestroy",
+              "destroyed",
+              "beforeEnter",
+              "beforeRouteEnter",
+              "beforeRouteUpdate",
+              "beforeRouteLeave",
+              "pureAssign"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["package.json"],
+      "parser": "jsonc-eslint-parser",
+      "rules": {
+        "jsonc/sort-keys": [
+          "error",
+          {
+            "pathPattern": "^$",
+            "order": [
+              "name",
+              "version",
+              "private",
+              "packageManager",
+              "description",
+              "type",
+              "keywords",
+              "homepage",
+              "bugs",
+              "license",
+              "author",
+              "contributors",
+              "funding",
+              "files",
+              "main",
+              "module",
+              "exports",
+              "unpkg",
+              "jsdelivr",
+              "browser",
+              "bin",
+              "man",
+              "directories",
+              "repository",
+              "publishConfig",
+              "scripts",
+              "peerDependencies",
+              "peerDependenciesMeta",
+              "optionalDependencies",
+              "dependencies",
+              "devDependencies",
+              "engines",
+              "config",
+              "overrides",
+              "pnpm",
+              "husky",
+              "lint-staged",
+              "eslintConfig"
+            ]
+          },
+          {
+            "pathPattern": "^(?:dev|peer|optional|bundled)?[Dd]ependencies$",
+            "order": { "type": "asc" }
+          }
+        ]
+      }
+    }
+  ],
+  "ignorePatterns": ["dist", "**/*.d.ts", "node_modules", "lint"]
+}

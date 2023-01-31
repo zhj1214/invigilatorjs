@@ -1,0 +1,151 @@
+// 订单基础信息
+.order-base-info {
+  padding: 40rpx;
+  border-bottom: 0.031rem solid #f2f3f3;
+
+  & > .item {
+    display: flex;
+    justify-content: space-between;
+    margin: 16rpx 0;
+    font-size: 28rpx;
+
+    .left {
+      color: #1a1a1a;
+    }
+
+    .right {
+      color: #696b6c;
+
+      .img {
+        width: 34rpx;
+        height: 34rpx;
+      }
+    }
+  }
+}
+
+.price-points-icon {
+  width: 26rpx;
+  height: 26rpx;
+  margin: 0 2rpx;
+  position: relative;
+  top: 2rpx;
+}
+
+.pay-methods {
+  border-top: 1rpx solid #f2f3f3;
+  padding: 40rpx 40rpx 100rpx;
+
+  .pay-header {
+    margin-bottom: 30rpx;
+  }
+
+  .title {
+    color: #292c2e;
+    font-weight: 500;
+    font-size: 28rpx;
+  }
+
+  .desc {
+    color: #92969a;
+    font-size: 26rpx;
+  }
+
+  .pay-methods-box {
+    display: flex;
+    justify-content: flex-start;
+
+    .pay-methods-item {
+      display: inline-flex;
+      align-items: center;
+      padding: 0 24rpx;
+      margin: 0 32rpx 32rpx 0;
+      border: 2rpx solid #d8d8d8;
+      font-size: 28rpx;
+      color: #92969a;
+      border-radius: 4rpx;
+      height: 72rpx;
+
+      &.selected {
+        color: #7190b0;
+        border-color: #7190b0;
+      }
+    }
+  }
+
+  .custom-input {
+    display: inline-block;
+    max-width: 196rpx;
+    letter-spacing: 0;
+    font-size: 28rpx;
+
+    &-placeholder {
+      font-size: 28rpx;
+      color: #7190b0;
+    }
+  }
+
+  .custom-error-tip {
+    color: #f85352;
+    font-size: 26rpx;
+  }
+}
+
+.error-tip {
+  position: fixed;
+  bottom: calc(120rpx + env(safe-area-inset-bottom));
+  width: 100%;
+  height: 80rpx;
+  font-size: 30rpx;
+  color: #92969a;
+  background: #e4e7ea;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: calc(120rpx + env(safe-area-inset-bottom));
+  padding: 0 40rpx env(safe-area-inset-bottom);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1rpx solid #f2f3f3;
+  background-color: #fff;
+  z-index: 999;
+
+  .left {
+    .label {
+      font-size: 26rpx;
+      color: #696b6c;
+    }
+
+    .money {
+      font-size: 32rpx;
+      color: #4e6175;
+
+      .point-icon {
+        width: 28rpx;
+        height: 28rpx;
+        margin: 0 2rpx;
+        position: relative;
+        top: 2rpx;
+      }
+    }
+  }
+
+  .right {
+    font-size: 28rpx;
+    width: 232rpx;
+    height: 84rpx;
+    line-height: 84rpx;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    border: none;
+
+    &.disabled {
+      background: #bababa;
+    }
+  }
+}

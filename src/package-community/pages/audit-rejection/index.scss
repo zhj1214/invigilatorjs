@@ -1,0 +1,39 @@
+.audit-content {
+  width: 80%;
+  margin: 0 auto;
+
+  .img-box {
+    text-align: center;
+    padding-top: 196rpx;
+
+    .img {
+      width: 144rpx;
+      height: 144rpx;
+    }
+  }
+
+  .page-title {
+    text-align: center;
+    font-size: 56rpx;
+    font-weight: bolder;
+    color: #424649;
+    margin: 28rpx 0 140rpx;
+  }
+
+  &-item {
+    display: flex;
+    justify-content: flex-start;
+    padding: 14rpx 0;
+
+    .label {
+      color: #909ca8;
+      font-size: 32rpx;
+    }
+
+    .value {
+      flex: 1;
+      color: #4e6175;
+      padding-left: 32rpx;
+    }
+  }
+}

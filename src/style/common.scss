@@ -1,0 +1,128 @@
+/************************************************************
+** 全局样式 **
+************************************************************/
+
+/* 字体样式
+  ------------------------------------------------------------ */
+.font-normal {
+  font-family: PingFangSC-Regular, 'PingFang SC';
+}
+
+.font-regular {
+  font-family: PingFangSC-Regular, 'PingFang SC';
+}
+
+.font-light {
+  font-family: PingFangSC-Regular, 'PingFang SC';
+}
+
+.font-medium {
+  font-family: PingFangSC-Regular, 'PingFang SC';
+}
+
+.font-bold {
+  font-family: PingFangSC-Regular, 'PingFang SC';
+}
+
+/* flex布局
+  ------------------------------------------------------------ */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.justify-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.justify-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.justify-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.items-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+.items-center {
+  display: flex;
+  align-items: center;
+}
+
+.items-end {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* 文本处理
+  ------------------------------------------------------------ */
+
+/* 文本溢出隐藏 单行 */
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  /* #ifdef MP-WEIXIN */
+  uni-text {
+    white-space: nowrap;
+  }
+  /* #endif */
+}
+
+/* 文本溢出隐藏 双行 */
+.ellipsis-2 {
+  display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  /* #ifdef MP-WEIXIN */
+  uni-text {
+    white-space: nowrap;
+  }
+  /* #endif */
+}
+
+/* 文本溢出隐藏 三行 */
+.ellipsis-3 {
+  display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+  /* #ifdef MP-WEIXIN */
+  uni-text {
+    white-space: nowrap;
+  }
+  /* #endif */
+}

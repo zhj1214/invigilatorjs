@@ -1,0 +1,230 @@
+.content {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+  background-color: white;
+  padding: 0 40rpx;
+
+  // padding-bottom: calc(100rpx + env(safe-area-inset-bottom));
+  .close-icon {
+    width: 48rpx;
+    height: 48rpx;
+    position: absolute;
+    top: 40rpx;
+    right: 36rpx;
+  }
+
+  .header-base-info {
+    display: flex;
+    padding: 40rpx 0;
+
+    .goods-image {
+      width: 200rpx;
+      height: 200rpx;
+      margin-right: 32rpx;
+    }
+
+    .base-info {
+      width: calc(100% - 232rpx);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .price-box {
+        line-height: 60rpx;
+      }
+
+      .stock-quantity {
+        margin: 6rpx 0 24rpx;
+        font-size: 26rpx;
+        color: #909ca8;
+      }
+
+      .attr-info {
+        width: 100%;
+        font-size: 28rpx;
+        word-break: break-all;
+
+        .selected-label {
+          color: #92969a;
+        }
+
+        .attr-value {
+          color: #292c2e;
+          margin-left: 14rpx;
+        }
+      }
+
+      // 处理h5样式不正确问题
+      .ellipsis-2 uni-text {
+        white-space: pre-line;
+      }
+    }
+
+    .activity-tip {
+      margin: 6rpx 0;
+      font-size: 26rpx;
+      color: #c14947;
+    }
+  }
+
+  .wrap-list {
+    // 弹窗高度 - 基础信息高度 - 购买数量高度 - 按钮高度
+    height: calc(70vh - 300rpx - 120rpx - 120rpx);
+
+    .attrs {
+      .attr-item {
+        .attr-key {
+          font-size: 26rpx;
+          font-weight: 400;
+          color: #bababa;
+          margin-top: 14rpx;
+          margin-bottom: 16rpx;
+        }
+
+        .attr-value-list {
+          display: flex;
+          flex-wrap: wrap;
+
+          .attr-value {
+            min-width: 180rpx;
+            max-width: 96%;
+            padding: 0 48rpx;
+            height: 76rpx;
+            line-height: 74rpx;
+            border: 1px solid #92969a;
+            border-radius: 2px;
+            background-color: #fff;
+            text-align: center;
+            font-size: 28rpx;
+            color: #292c2e;
+            margin: 0 24rpx 24rpx 0;
+            position: relative;
+
+            .not-stock-hint {
+              width: 56rpx;
+              height: 30rpx;
+              line-height: 28rpx;
+              text-align: center;
+              position: absolute;
+              top: -15rpx;
+              right: -15rpx;
+              color: #fff;
+              font-size: 20rpx;
+              background-color: #bababa;
+            }
+          }
+
+          .attr-value.active {
+            border-color: #1a1a1a;
+            background-color: #1a1a1a;
+            color: #fff;
+          }
+
+          .attr-value.disabled {
+            border-color: #d8d8d8;
+            color: #bababa;
+          }
+        }
+      }
+    }
+  }
+
+  .no-control-number {
+    // 弹窗高度 - 基础信息高度 - 购买数量高度 - 按钮高度
+    height: calc(70vh - 300rpx - 120rpx);
+  }
+
+  // 购买数量、加减号
+  .control-number {
+    height: 100rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .label {
+      font-size: 28rpx;
+      color: #292c2e;
+      font-weight: 500;
+      line-height: 66rpx;
+    }
+
+    .btn-group {
+      font-size: 28rpx;
+      font-weight: 600;
+      color: #1a1a1a;
+      display: flex;
+      align-items: center;
+      width: 206rpx;
+      height: 66rpx;
+      border-radius: 33rpx;
+      border: 1rpx solid #909ca8;
+
+      .number {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .wrap-icon {
+        flex: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.disabled {
+          opacity: 0.4;
+        }
+
+        .minus,
+        .plus {
+          width: 32rpx;
+          height: 32rpx;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  .popup-footer {
+    width: 100%;
+    height: 120rpx;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // 按钮基础样式
+    .btn {
+      height: 84rpx;
+      line-height: 82rpx;
+      border: 1rpx solid #1a1a1a;
+      font-size: 28rpx;
+      text-align: center;
+      color: white;
+      background-color: #1a1a1a;
+    }
+
+    // 无背景
+    .btn-plain {
+      background-color: white;
+      color: #1a1a1a;
+    }
+
+    // 铺满
+    .btn-full {
+      width: 100%;
+    }
+
+    .btn-middle {
+      width: 315rpx;
+    }
+
+    .disabled {
+      background-color: #bababa;
+      color: #fff;
+      border: 1rpx solid #bababa;
+    }
+  }
+}

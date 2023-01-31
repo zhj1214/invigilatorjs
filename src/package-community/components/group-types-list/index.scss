@@ -1,0 +1,19 @@
+.group-types {
+  width: 136rpx;
+  background: #f7f7f7;
+  flex-shrink: 0;
+
+  &-item {
+    text-align: center;
+    color: #1a1a1a;
+    padding: 48rpx 10rpx;
+    word-break: break-all;
+    font-size: 28rpx;
+
+    &.active {
+      border-left: 4rpx solid #1a1a1a;
+      background: #fff;
+      font-weight: bold;
+    }
+  }
+}

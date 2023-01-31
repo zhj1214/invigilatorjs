@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" charset="UTF-8" />
+    <title>数字商城</title>
+    <script>
+      // ios10以上双击缩放问题
+      window.onload = function () {
+        if (navigator.userAgent.indexOf('iPhone') > -1 || navigator.userAgent.indexOf('iPad') > -1) {
+          console.log(navigator.userAgent, 'iphone')
+          document.addEventListener('touchstart', function (event) {
+            if (event.touches.length > 1) {
+              event.preventDefault()
+            }
+          })
+          var lastTouchEnd = 0
+          document.addEventListener(
+            'touchend',
+            function (event) {
+              var now = new Date().getTime()
+              if (now - lastTouchEnd <= 400) {
+                event.preventDefault()
+              }
+              lastTouchEnd = now
+            },
+            false
+          )
+          document.addEventListener('gesturestart', function (event) {
+            event.preventDefault()
+          })
+        }
+      }
+    </script>
+    <!--preload-links-->
+    <!--app-context-->
+  </head>
+  <body>
+    <div id="app"><!--app-html--></div>
+    <script type="module" src="/src/main.ts"></script>
+    <script src="https://gosspublic.alicdn.com/aliyun-oss-sdk-6.15.0.min.js"></script>
+  </body>
+</html>

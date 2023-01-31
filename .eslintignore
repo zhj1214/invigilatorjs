@@ -1,0 +1,6 @@
+dist
+src/components/uni-*/*
+src/lib/*
+*.config.js
+static
+scripts

@@ -1,0 +1,36 @@
+{
+  /*
+   * vscode基础配置
+   */
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  /*
+   * javascript格式配置
+   */
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  /*
+   * ts sdk版本配置
+   */
+  "typescript.tsdk": "node_modules/typescript/lib",
+  /*
+   * eslint和prettier配置
+   */
+  "eslint.validate": ["javascript", "javascriptreact", "vue", "html", "typescript"],
+  "eslint.packageManager": "yarn",
+  /*
+   * stylelint配置
+   */
+  "stylelint.useLocal": true,
+  "stylelint.autoFixOnSave": true,
+  /*
+   * style helper配置
+   */
+  "style-helper.variablesPath": "src\\uni.scss"
+}

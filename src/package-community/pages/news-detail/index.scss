@@ -1,0 +1,171 @@
+.news-detail {
+  padding: 44rpx 0;
+
+  .news-detail-main {
+    padding: 0 40rpx;
+
+    .news-detail-title {
+      font-size: 42rpx;
+      font-weight: bold;
+      color: #292c2e;
+      line-height: 60rpx;
+
+      .label-name {
+        min-width: 54rpx;
+        max-width: 108rpx;
+        padding: 4rpx 8rpx;
+        line-height: 34rpx;
+        text-align: center;
+        background: #dff0ff;
+        border-radius: 4rpx;
+        font-size: 20rpx;
+        font-weight: 600;
+        color: #3b92d8;
+        float: left;
+        margin-top: 8rpx;
+        margin-right: 12rpx;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &-info {
+    padding: 0 40rpx;
+
+    &-location {
+      width: 100%;
+
+      // margin: 50rpx 0 16rpx;
+      margin-bottom: 72rpx;
+      line-height: 36rpx;
+      height: 36rpx;
+
+      // background: #edeff1;
+      // border-radius: $uni-font-size-sm;
+      font-size: $uni-font-size-sm;
+
+      // font-family: $basic-font_family-sub_title;
+      font-weight: 400;
+      color: #92969a;
+      display: inline-flex;
+      align-items: center;
+
+      // padding: 0 16rpx;
+      &-img {
+        width: 28rpx;
+        height: 28rpx;
+      }
+
+      &-text {
+        font-size: $uni-font-size-sm;
+        font-weight: 400;
+        margin-left: 6rpx;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    &-title {
+      margin-bottom: 16rpx;
+
+      &-label {
+        min-width: 54rpx;
+        max-width: 108rpx;
+        padding: 4rpx 8rpx;
+        line-height: 34rpx;
+        text-align: center;
+        background: #dff0ff;
+        border-radius: 4rpx;
+        font-size: 20rpx;
+        font-family: 'PingFangSC-Semibold, PingFang SC';
+        font-weight: 600;
+        color: #3b92d8;
+        float: left;
+        margin-top: 12rpx;
+        margin-right: 12rpx;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      &-text {
+        font-size: 42rpx;
+        font-weight: 600;
+        color: $uni-text-color;
+        line-height: 1.4;
+      }
+    }
+
+    &-others {
+      display: flex;
+      align-items: center;
+      font-size: $uni-font-size-sm;
+      font-weight: 400;
+      color: #999;
+      line-height: 36rpx;
+      height: 36rpx;
+
+      &-views {
+        font-size: $uni-font-size-sm;
+        margin-right: 16rpx;
+      }
+
+      &-time {
+        font-size: $uni-font-size-sm;
+      }
+    }
+
+    &-content {
+      &-img,
+      &-video {
+        width: 100%;
+        height: 386rpx;
+        border-radius: 16rpx;
+        margin: 32rpx auto;
+      }
+    }
+  }
+
+  &-tags {
+    margin-top: 40rpx;
+    line-height: 46rpx;
+    background: #f2f3f3;
+    border-radius: 2px;
+    font-size: $uni-font-size-sm;
+    font-weight: 400;
+    color: #4e6175;
+    display: inline-block;
+    margin-right: 32rpx;
+    padding: 0 16rpx;
+  }
+
+  &-video {
+    width: 100%;
+    height: 386rpx;
+
+    // margin: 32rpx auto;
+  }
+}
+
+.recommend-box {
+  width: 100%;
+  background: #ededed;
+  padding: 40rpx;
+
+  .title {
+    color: #292c2e;
+    font-size: $uni-font-size-subtitle;
+    font-weight: 500;
+  }
+
+  .list {
+    margin-top: 40rpx;
+
+    .recommend-item {
+      margin-bottom: $uni-font-size-subtitle;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+.community-page {
+
+  /*  #ifdef  H5  */
+  height: calc(var(--vh) - 88rpx - 110rpx - env(safe-area-inset-bottom) - var(--tab-bar-height));
+  /*  #endif  */
+
+  /*  #ifdef  MP-WEIXIN  */
+  height: calc(100vh - 88rpx - 110rpx);
+  /*  #endif  */
+  margin-top: 20rpx;
+
+  .sp-title-bar {
+    display: flex;
+    padding: 0 40rpx;
+  }
+
+  .group-scroll {
+    padding-left: 40rpx;
+    height: 184rpx;
+    white-space: nowrap;
+  }
+
+  .topic-scroll {
+    padding-left: 40rpx;
+    height: 176rpx;
+    white-space: nowrap;
+  }
+
+  .topic-list,
+  .circle-list {
+    display: flex;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .sp-mask-image:not(:last-of-type),
+    .sp-title-image:not(:last-of-type) {
+      margin-right: 16rpx;
+    }
+
+    .sp-mask-image:last-child,
+    .sp-title-image:last-child {
+      padding-right: 80rpx;
+    }
+  }
+
+  .circle-list {
+    height: 184rpx;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .topic-list {
+    height: 176rpx;
+  }
+
+  .square-list {
+    .square-list-item {
+      padding: 0 40rpx;
+      margin-bottom: 72rpx;
+    }
+
+    padding-bottom: 72rpx;
+  }
+
+  .comunity-content-none {
+    display: flex;
+    justify-content: center;
+    margin: 154rpx 0;
+    font-size: 26rpx;
+    font-weight: 400;
+    color: #909ca8;
+  }
+
+  .comunity-content-no-more {
+    display: flex;
+    justify-content: center;
+    font-size: 26rpx;
+    font-weight: 400;
+    color: #909ca8;
+  }
+}
+
+.tab-content {
+  width: 100%;
+  height: 100rpx;
+}

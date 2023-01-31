@@ -1,0 +1,50 @@
+.user-groups {
+  height: var(--vh);
+
+  .user-groups-content {
+
+    /*  #ifdef  H5  */
+    // tab高度 footer高度
+    height: calc(var(--vh) - 110rpx - var(--window-top));
+    /*  #endif  */
+
+    /*  #ifdef  MP-WEIXIN  */
+    // tab高度 footer高度
+    height: calc(100vh - 110rpx - var(--window-top));
+    /*  #endif  */
+
+    &.has-footer {
+
+      /*  #ifdef  H5  */
+      // tab高度 footer高度
+      height: calc(var(--vh) - 110rpx - 130rpx - var(--window-top));
+      /*  #endif  */
+
+      /*  #ifdef  MP-WEIXIN  */
+      // tab高度 footer高度
+      height: calc(100vh - 110rpx - 130rpx - var(--window-top));
+      /*  #endif  */
+    }
+  }
+
+  .footer {
+    z-index: 99;
+    border-top: 1rpx solid #e4e7ea;
+    position: fixed;
+    padding: 18rpx 40rpx;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 1px 0 0 #e4e7ea;
+    background: #fff;
+
+    &-btn {
+      height: 92rpx;
+      background: #1a1a1a;
+      color: #fff;
+      font-family: SourceHanSansSC-Normal, SourceHanSansSC;
+      font-size: 28rpx;
+      text-align: center;
+      padding: 22rpx 0 24rpx;
+    }
+  }
+}

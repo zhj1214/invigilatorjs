@@ -1,0 +1,27 @@
+.all-group {
+  position: relative;
+  height: 100%;
+
+  &.vh-hight {
+
+    /*  #ifdef  H5  */
+    height: calc(var(--vh) - 44px);
+    /*  #endif  */
+
+    /*  #ifdef  MP-WEIXIN  */
+    height: 100vh;
+    /*  #endif  */
+  }
+
+  .type-list {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+
+    &.is-show-dialog {
+      z-index: 0;
+    }
+  }
+}

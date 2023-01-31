@@ -1,34 +1,58 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
+    "module": "esnext",
     "target": "esnext",
-    "moduleResolution": "node",
-    "strict": true,
-    "declaration": true,
-    "noUnusedLocals": true,
-    "esModuleInterop": true,
-    "outDir": "out",
     "lib": [
-      "ESNext",
+      "esnext",
       "dom"
     ],
-    "sourceMap": false,
-    "noEmitOnError": true,
-    "noImplicitAny": false
+    "sourceMap": true,
+    "declaration": true,
+    "noUnusedLocals": true,
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "types": [
+      "node",
+      "types",
+      "@supaur-works/sa-ui/volar",
+      "@dcloudio/types",
+      "@dcloudio/uni-app"
+    ],
+    "paths": {
+      "@src/*": [
+        "src/*"
+      ],
+      "@api/*": [
+        "src/api/*"
+      ],
+      "@util/*": [
+        "src/util/*"
+      ],
+      "$dayjs": [
+        "node_modules/dayjs/esm/index.js"
+      ]
+    }
   },
-  "types": [
-    "@dcloudio/types",
-    "miniprogram-api-typings",
-    "mini-types"
-  ],
   "include": [
-    "src/*",
-    "src/**/*.ts",
-    "types",
-    "*.d.ts"
+    "src",
+    "scripts/**/*.ts"
   ],
   "exclude": [
     "node_modules",
-    "examples"
+    "dist",
+    "unpackage",
+    "src/components/uni-*/*",
+    "src/lib/decimal.js",
+    "src/lib/html-parser.js",
+    "src/lib/lodash.ts",
+    "src/lib/qqmap-wx-jssdk.js"
   ]
 }

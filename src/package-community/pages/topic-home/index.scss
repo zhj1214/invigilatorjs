@@ -1,0 +1,188 @@
+.topic-home {
+  &-header {
+    height: 489rpx;
+    position: relative;
+
+    &-bg {
+      width: 100%;
+      height: 100%;
+
+      .bg-img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .filter-box {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(26 26 26 / 60%));
+      z-index: 2;
+      position: absolute;
+      top: 0;
+    }
+
+    &-content {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 279rpx 40rpx 0;
+      z-index: 3;
+
+      .topic-title {
+        font-size: 46rpx;
+        height: 52rpx;
+        line-height: 52rpx;
+        color: #fff;
+        font-weight: 500;
+        margin-bottom: 17rpx;
+      }
+
+      .topic-subtitle {
+        display: flex;
+        justify-content: space-between;
+
+        .topic-description {
+          width: 353rpx;
+          font-size: 24rpx;
+          font-weight: 400;
+          color: #fff;
+          line-height: 34rpx;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+        }
+
+        .topic-follow-btn {
+          width: 164rpx;
+          height: 64rpx;
+          line-height: 64rpx;
+          border-radius: 4rpx;
+          border: 2rpx solid #fff;
+          text-align: center;
+          font-size: 30rpx;
+          font-weight: 400;
+          color: #fff;
+
+          &.followed {
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+
+  &-main {
+    position: relative;
+    background: #fff;
+
+    .topic-date {
+      height: 96rpx;
+      line-height: 96rpx;
+      background: #f2f3f3;
+      font-size: 28rpx;
+      padding: 0 40rpx;
+      display: flex;
+      align-items: center;
+      color: #696b6c;
+      margin-bottom: 70rpx;
+
+      .date-icon {
+        width: 30rpx;
+        height: 30rpx;
+        margin-right: 14rpx;
+      }
+
+      .rule-btn {
+        margin-left: 18rpx;
+
+        .icon {
+          width: 24rpx;
+          height: 24rpx;
+        }
+      }
+    }
+
+    .topic-content-title {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 40rpx;
+      align-items: center;
+      margin-bottom: 46rpx;
+
+      .title {
+        font-size: 36rpx;
+        font-weight: bold;
+        color: #292c2e;
+        height: 54rpx;
+        line-height: 54rpx;
+      }
+
+      .btn {
+        width: 164rpx;
+        height: 64rpx;
+        line-height: 64rpx;
+        text-align: center;
+        background: #4e6175;
+        border-radius: 4rpx;
+        font-size: 30rpx;
+        color: #fff;
+        font-weight: 400;
+      }
+
+      .gray-style {
+        color: #fff;
+        background: #999;
+      }
+    }
+
+    .topic-content-list {
+      padding: 0 40rpx;
+
+      .topic-content-item:not(:last-of-type) {
+        margin-bottom: 72rpx;
+      }
+    }
+
+    .topic-content-none {
+      padding: 20rpx 0;
+      color: #909ca8;
+      font-size: 26rpx;
+      text-align: center;
+      margin-bottom: 40rpx;
+    }
+  }
+}
+
+.pop-class {
+  padding: 40rpx;
+  height: 1125rpx;
+
+  .pop-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45rpx;
+
+    .title {
+      color: #292c2e;
+      font-size: 34rpx;
+    }
+
+    .icon-x {
+      width: 48rpx;
+      height: 48rpx;
+    }
+  }
+
+  .module {
+    padding-bottom: 17rpx;
+    height: calc(100% - 93rpx);
+    color: #696b6c;
+    font-size: 28rpx;
+  }
+}

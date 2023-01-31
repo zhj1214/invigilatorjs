@@ -1,0 +1,164 @@
+view {
+  flex-shrink: 1;
+}
+
+.uniPopup ::v-deep .uni-popup .uni-popup__wrapper-box {
+  padding-bottom: 0 !important;
+}
+
+::v-deep .pop-dialog {
+  .tip-content {
+    padding: 32rpx 32rpx 72rpx;
+  }
+}
+
+.groupRecord {
+  padding: 43rpx 40rpx;
+  height: 100vh;
+
+  // margin: 43rpx 0;
+  .tab {
+    padding-bottom: 40rpx;
+
+    .text {
+      display: inline-block;
+      margin-right: 56rpx;
+      color: #92969a;
+      font-size: 30rpx;
+      font-weight: 500;
+      position: relative;
+      font-family: SourceHanSansSC-Regular, SourceHanSansSC;
+      padding-bottom: 12rpx;
+
+      &.active {
+        font-size: 36rpx;
+        color: #292c2e;
+        font-family: SourceHanSansSC-Bold, SourceHanSansSC;
+        font-weight: bold;
+      }
+
+      .line {
+        display: inline-block;
+        width: 55%;
+        height: 3px;
+        background: #292c2e;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 20%;
+      }
+    }
+  }
+
+  .recordList {
+
+    .item {
+      display: flex;
+
+      .left {
+        margin-right: 24rpx;
+
+        image {
+          width: 144rpx;
+          height: 106rpx;
+          border-radius: 5rpx;
+        }
+      }
+
+      .right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .title {
+          font-size: 30rpx;
+          font-weight: bold;
+          font-family: SourceHanSansSC-Medium, SourceHanSansSC;
+        }
+
+        .note {
+          .text {
+            display: inline-block;
+            font-family: SourceHanSansSC-Normal, SourceHanSansSC;
+            font-size: 24rpx;
+            color: #92969a;
+            margin-right: 16rpx;
+            white-space: nowrap;
+          }
+        }
+
+        .btn {
+          .apply {
+            width: 124rpx;
+            height: 56rpx;
+            line-height: 56rpx;
+            border: 1rpx solid #d8d8d8;
+            font-family: SourceHanSansSC-Normal, SourceHanSansSC;
+            font-size: 24rpx;
+            background-color: #fff;
+            text-align: center;
+            margin: 0;
+            color: #292c2e;
+          }
+
+          .no {
+            background-color: #4e6175;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .bottom {
+      margin-top: 10rpx;
+      padding: 28rpx 32rpx;
+      // height: 144rpx;
+      background: #edeff1;
+      border-radius: 4px;
+      margin-bottom: 67rpx;
+
+      //   opacity: 0.6;
+      .reason {
+        .title {
+          font-family: SourceHanSansSC-Regular, SourceHanSansSC;
+          font-weight: 400;
+          color: #4e6175;
+          font-size: 28rpx;
+        }
+
+        .time {
+          font-family: SourceHanSansSC-Regular, SourceHanSansSC;
+          font-weight: 400;
+          color: #292c2e;
+          font-size: 28rpx;
+        }
+      }
+
+      .time {
+        .title {
+          font-family: SourceHanSansSC-Regular, SourceHanSansSC;
+          font-weight: 400;
+          color: #4e6175;
+          font-size: 28rpx;
+        }
+
+        .time {
+          font-family: SourceHanSansSC-Regular, SourceHanSansSC;
+          font-weight: 400;
+          color: #292c2e;
+          font-size: 28rpx;
+        }
+      }
+    }
+  }
+
+  .no-more {
+    text-align: center;
+    font-size: 26rpx;
+    font-family: SourceHanSansSC-Normal, SourceHanSansSC;
+    font-weight: 400;
+    color: #909ca8;
+    padding-bottom: 40rpx;
+  }
+}

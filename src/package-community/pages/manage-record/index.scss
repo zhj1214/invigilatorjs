@@ -1,0 +1,180 @@
+.uniPopup ::v-deep .uni-popup .uni-popup__wrapper-box {
+  padding-bottom: 0 !important;
+}
+
+.groupRecord {
+  padding: 43rpx 40rpx;
+
+  // margin: 43rpx 0;
+  .tab {
+    padding-bottom: 48rpx;
+
+    .text {
+      display: inline-block;
+      margin-right: 56rpx;
+      color: #92969a;
+      font-size: 30rpx;
+      font-weight: 500;
+      position: relative;
+      font-family: SourceHanSansSC-Regular, SourceHanSansSC;
+
+      &.active {
+        font-size: 36rpx;
+        color: #292c2e;
+        font-family: SourceHanSansSC-Bold, SourceHanSansSC;
+        font-weight: bold;
+      }
+
+      .line {
+        display: inline-block;
+        width: 55%;
+        height: 3px;
+        background: #292c2e;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 20%;
+      }
+    }
+  }
+
+  .recordList {
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 32rpx;
+
+        image {
+          width: 88rpx;
+          height: 88rpx;
+          border-radius: 50%;
+          margin-right: 20rpx;
+        }
+
+        .name {
+          font-size: 28rpx;
+          font-family: SourceHanSansSC-Medium, SourceHanSansSC;
+          font-weight: 500;
+          color: #1a1a1a;
+        }
+      }
+
+      .right {
+        .title {
+          font-size: 30rpx;
+          font-weight: bold;
+          font-family: SourceHanSansSC-Medium, SourceHanSansSC;
+        }
+
+        .note {
+          .text {
+            display: inline-block;
+            font-family: SourceHanSansSC-Normal, SourceHanSansSC;
+            font-size: 24rpx;
+            color: #92969a;
+            margin-right: 16rpx;
+          }
+        }
+
+        .btn {
+          display: flex;
+
+          .rejected {
+            width: 124rpx;
+            height: 56rpx;
+            line-height: 56rpx;
+            font-family: SourceHanSansSC-Normal, SourceHanSansSC;
+            font-size: 26rpx;
+            background-color: #fff;
+            text-align: center;
+            color: #4e6175;
+            border-radius: 2rpx;
+            border: 2rpx solid #4e6175;
+          }
+
+          .pass {
+            margin-left: 32rpx;
+            width: 124rpx;
+            height: 56rpx;
+            line-height: 56rpx;
+            font-family: SourceHanSansSC-Normal, SourceHanSansSC;
+            font-size: 26rpx;
+            background-color: #4e6175;
+            text-align: center;
+            color: #fff;
+            border-radius: 2rpx;
+            border: 2rpx solid #4e6175;
+          }
+
+          .no {
+            background-color: #4e6175;
+            color: #fff;
+          }
+        }
+
+        .time {
+          font-size: 26rpx;
+          font-family: SourceHanSansSC-Normal, SourceHanSansSC;
+          font-weight: 400;
+          color: #909ca8;
+        }
+      }
+    }
+
+    .bottom {
+      margin-top: 16rpx;
+      padding: 28rpx 32rpx;
+      // height: 144rpx;
+      background: #edeff1;
+      border-radius: 4px;
+
+      //   opacity: 0.6;
+      .reason {
+        .title {
+          font-family: SourceHanSansSC-Regular, SourceHanSansSC;
+          font-weight: 400;
+          color: #4e6175;
+          font-size: 28rpx;
+        }
+
+        .time {
+          font-family: SourceHanSansSC-Regular, SourceHanSansSC;
+          font-weight: 400;
+          color: #292c2e;
+          font-size: 28rpx;
+        }
+      }
+
+      .time {
+        .title {
+          font-family: SourceHanSansSC-Regular, SourceHanSansSC;
+          font-weight: 400;
+          color: #4e6175;
+          font-size: 28rpx;
+        }
+
+        .time {
+          font-family: SourceHanSansSC-Regular, SourceHanSansSC;
+          font-weight: 400;
+          color: #292c2e;
+          font-size: 28rpx;
+        }
+      }
+    }
+  }
+
+  .no-more {
+    text-align: center;
+    font-size: 26rpx;
+    font-family: SourceHanSansSC-Normal, SourceHanSansSC;
+    font-weight: 400;
+    color: #909ca8;
+    padding-bottom: 40rpx;
+  }
+}

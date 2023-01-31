@@ -1,0 +1,232 @@
+.my-content-list {
+  position: relative;
+  padding-top: 110rpx;
+
+  .sp-header-tabs {
+    position: fixed;
+    top: var(--window-top);
+    width: 100%;
+    z-index: 999;
+    background: #fff;
+  }
+
+  .placeholder-label {
+    width: 100%;
+    height: 64rpx;
+  }
+
+  .my-content {
+    &-list {
+      padding: 40rpx;
+    }
+
+    &-item {
+      margin-bottom: 40rpx;
+    }
+  }
+
+  .my-comment {
+    &-list {
+      padding: 40rpx;
+    }
+
+    &-item {
+      margin-bottom: 40rpx;
+
+      &-header {
+        align-items: center;
+
+        .user-info {
+          display: inline-flex;
+          align-items: center;
+
+          &-avatar {
+            width: 88rpx;
+            height: 88rpx;
+            border-radius: 50%;
+            display: block;
+          }
+
+          .user-info-center {
+            display: inline-flex;
+            flex-direction: column;
+            padding: 0 20rpx;
+
+            .user-info-name {
+              font-size: 28rpx;
+              color: #1a1a1a;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      &-detail {
+        line-height: 52rpx;
+        font-size: 32rpx;
+        font-weight: 400;
+        color: #292c2e;
+        margin: 8rpx 0 32rpx;
+      }
+
+      &-content {
+        border: 1px solid #edeff1;
+        border-radius: 8rpx;
+        padding: 40rpx 24rpx 24rpx;
+
+        &.gray {
+          background: #f2f3f3;
+          border-radius: 4px;
+
+          .innder-box {
+            background: #fff;
+            border-radius: 4px;
+            padding: 24rpx 20rpx;
+          }
+        }
+
+        .has-pcomment {
+          .pcomment {
+            display: flex;
+            align-items: center;
+            margin-bottom: 21rpx;
+
+            .img {
+              width: 40rpx;
+              height: 40rpx;
+            }
+
+            .name {
+              margin-left: 12rpx;
+              font-size: 30rpx;
+              font-family: SourceHanSansSC-Medium, SourceHanSansSC;
+              color: #1a1a1a;
+              font-weight: bold;
+            }
+
+            .content {
+              font-size: 30rpx;
+              font-family: SourceHanSansSC-Medium, SourceHanSansSC;
+              font-weight: 400;
+              color: #292c2e;
+              flex: 1;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+
+            .content-has-delete {
+              margin-bottom: 22px;
+            }
+          }
+        }
+
+        .content-header {
+          display: inline-flex;
+          width: 100%;
+
+          .topic-name {
+            color: #4e6175;
+            font-size: 32rpx;
+            margin: 0 15rpx;
+          }
+
+          .content-detail {
+            margin-left: 15rpx;
+            flex: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+
+        .content-date {
+          color: #909ca8;
+          font-size: 26rpx;
+          margin: 4rpx 0 20rpx;
+        }
+
+        .content-image {
+          width: 100%;
+        }
+
+        .content-has-delete {
+          font-size: 30rpx;
+          color: #92969a;
+        }
+      }
+
+      &-footer {
+        color: #909ca8;
+        font-size: 26rpx;
+        margin-top: 16rpx;
+      }
+    }
+
+    .ellipsis {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .my-content-none,
+  .my-comment-none {
+    margin: 154rpx 0;
+    font-size: 26rpx;
+    font-weight: 400;
+    color: #909ca8;
+    text-align: center;
+
+    image {
+      width: 144rpx;
+      height: 144rpx;
+      display: block;
+      margin: 0 auto 40rpx;
+    }
+  }
+
+  .pop-select {
+    width: 100vw;
+    background: #fff;
+
+    .item {
+      height: 100rpx;
+      line-height: 100rpx;
+      text-align: center;
+      color: #000;
+      font-size: 30rpx;
+    }
+
+    .line {
+      background-color: #edeff1;
+      height: 12rpx;
+    }
+
+    .cancel {
+      font-weight: bold;
+      font-size: 32rpx;
+    }
+  }
+}
+
+.comment-status0 {
+  color: #909ca8;
+}
+
+.comment-status2 {
+  color: #f16663;
+}
+
+.more-icon {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.no-more {
+  text-align: center;
+  font-size: 26rpx;
+  font-weight: 400;
+  color: #909ca8;
+  padding-bottom: 40rpx;
+}

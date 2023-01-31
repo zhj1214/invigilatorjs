@@ -1,0 +1,85 @@
+.group-list-scroll {
+  .group-list {
+    &.all-group-page {
+      padding-left: 136rpx;
+    }
+
+    &-blank {
+      color: #909ca8;
+      text-align: center;
+      padding: 341rpx 0;
+      padding-left: 8rpx;
+    }
+
+    .group-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 104rpx;
+      margin-bottom: 46rpx;
+      padding-left: 32rpx;
+      padding-right: 24rpx;
+
+      .group-logo {
+        width: 144rpx;
+        height: 106rpx;
+        border-radius: 2rpx;
+      }
+
+      .icon {
+        width: 24rpx;
+        height: 24rpx;
+        margin-right: 4rpx;
+        vertical-align: -5%;
+      }
+
+      .info {
+        flex: 1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 48rpx 0 18rpx;
+
+        .group-name {
+          font-size: 30rpx;
+          line-height: 40rpx;
+        }
+
+        .group-member-num {
+          font-size: 24rpx;
+          color: #92969a;
+        }
+      }
+
+      .follow-btn {
+        min-width: 124rpx;
+        padding: 0 15rpx;
+        height: 56rpx;
+        font-size: 26rpx;
+        line-height: 56rpx;
+        text-align: center;
+        background-color: #4e6175;
+        color: #fff;
+
+        &.follow {
+          color: #f2f3f3;
+          background: #bababa;
+        }
+
+        &.selected {
+          background: #909ca8;
+        }
+      }
+    }
+
+    &-no-more {
+      text-align: center;
+      font-size: 26rpx;
+      font-weight: 400;
+      color: #909ca8;
+      padding-bottom: 40rpx;
+      margin-top: 16rpx;
+    }
+  }
+}

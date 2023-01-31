@@ -1,0 +1,63 @@
+.container {
+  background-color: #fff;
+  width: 100vw;
+
+  // status-bar  搜索框 tab
+  padding-top: calc(var(--status-bar-height) + 88rpx + 110rpx);
+
+  .community-header {
+    display: flex;
+    align-items: center;
+    color: rgb(186 186 186);
+    font-size: 26rpx;
+    height: 88rpx;
+    line-height: 88rpx;
+    white-space: nowrap;
+    padding: 0 40rpx;
+    background: #fff;
+
+    .community-header-avator {
+      width: 64rpx;
+      height: 64rpx;
+
+      .image-round {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    .community-header-search {
+
+      /* #ifdef H5 */
+      width: 582rpx;
+      /* #endif */
+
+      /* #ifdef MP-WEIXIN */
+      width: 370rpx;
+      /* #endif */
+      height: 66rpx;
+      margin-left: 24rpx;
+      background-color: #f2f3f3;
+      border-radius: 32rpx;
+      box-sizing: border-box;
+
+      .search-bar {
+        line-height: 64rpx;
+        text-align: center;
+
+        .search-icon {
+          width: 32rpx;
+          height: 32rpx;
+          margin-right: 8rpx;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  .add-btn {
+    width: 48rpx;
+    height: 48rpx;
+  }
+}

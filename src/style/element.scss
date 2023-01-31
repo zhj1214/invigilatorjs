@@ -1,0 +1,111 @@
+html {
+  font-size: 28rpx;
+  color: #1a1a1a;
+}
+
+body {
+  margin: 0;
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: PingFangSC-Regular, 'PingFang SC';
+}
+
+view,
+image,
+text {
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+uni-page-body {
+  height: 100%;
+}
+
+/* input type=number里上下箭头隐藏 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+input[type='number'] {
+  appearance: textfield;
+}
+
+div,
+br {
+  display: block;
+}
+
+img {
+  max-width: 100% !important;
+  height: auto;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  margin-bottom: 1em;
+}
+
+h1 {
+  display: block;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h2 {
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+rich-text {
+  .img-class {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto;
+  }
+}
+
+.uni-modal__title {
+  font-family: SourceHanSansSC-Bold;
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #4e6175;
+}
+
+.uni-modal__bd {
+  padding-top: 32rpx;
+  padding-bottom: 72rpx;
+  font-size: 34rpx;
+  color: #92969a;
+}
+
+.uni-modal__btn {
+  font-family: SourceHanSansSC-Medium;
+  font-size: 34rpx;
+  font-weight: 500;
+  color: #292c2e !important;
+  letter-spacing: 2rpx;
+}
+
+.uni-scroll-view::-webkit-scrollbar {
+  display: none;
+}
+
+.uni-swiper-slides {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,21 @@
+.user-list {
+  .user-item {
+    margin-bottom: 24rpx;
+  }
+
+  .follow-btn {
+    width: 124rpx;
+    height: 56rpx;
+    font-size: 26rpx;
+    line-height: 56rpx;
+    text-align: center;
+    background: #4e6175;
+    color: #fff;
+
+    &.followed {
+      background-color: #fff;
+      color: #909ca8;
+      border: 1px solid #f2f3f3;
+    }
+  }
+}

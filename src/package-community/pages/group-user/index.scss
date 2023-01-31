@@ -1,0 +1,118 @@
+.flex {
+  display: flex;
+
+  &.aic {
+    align-items: center;
+  }
+
+  &.jsb {
+    justify-content: space-between;
+  }
+
+  &.jc {
+    justify-content: center;
+  }
+}
+
+.group-member-list {
+  height: calc(100vh - 100rpx);
+  padding: 16rpx 40rpx;
+
+  .group-leader {
+    padding-bottom: 16rpx;
+    border-bottom: 1px solid #e4e7ea;
+    margin-bottom: 56rpx;
+  }
+
+  .scroll {
+    height: calc(100vh - 120rpx);
+  }
+
+  .title {
+    font-size: 28rpx;
+    color: #696b6c;
+    padding-bottom: 8rpx;
+  }
+
+  .word-index {
+    line-height: 69rpx;
+    color: #292c2e;
+    font-size: 28rpx;
+  }
+
+  .item {
+    padding: 16rpx 0;
+    margin-bottom: 16rpx;
+
+    .logo {
+      width: 88rpx;
+      height: 88rpx;
+      border-radius: 50%;
+      margin-right: 20rpx;
+    }
+
+    .name {
+      color: #1a1a1a;
+      font-size: 28rpx;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 400rpx;
+    }
+
+    .btn {
+      width: 124rpx;
+      height: 56rpx;
+      font-size: 26rpx;
+      line-height: 56rpx;
+      text-align: center;
+      background-color: #4e6175;
+      color: #fff;
+
+      &.follow-single,
+      &.follow-mutual {
+        background-color: #fff;
+        color: #909ca8;
+        border: 1px solid #f2f3f3;
+      }
+
+      &.remove {
+        background-color: #fff;
+        border-radius: 2rpx;
+        border: 2rpx solid #4e6175;
+        color: #4e6175;
+        font-size: 24rpx;
+      }
+    }
+  }
+
+  .list-no-more {
+    text-align: center;
+    font-size: 26rpx;
+    font-family: SourceHanSansSC-Normal, SourceHanSansSC;
+    font-weight: 400;
+    color: #909ca8;
+    padding-bottom: 40rpx;
+  }
+}
+
+.foot {
+  border-top: 1rpx solid #e4e7ea;
+  position: fixed;
+  padding: 18rpx 40rpx;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 1px 0 0 #e4e7ea;
+  background: #fff;
+
+  .btn {
+    height: 92rpx;
+    background: #1a1a1a;
+    color: #fff;
+    font-family: SourceHanSansSC-Normal, SourceHanSansSC;
+    font-size: 28rpx;
+    text-align: center;
+    padding: 22rpx 0 24rpx;
+  }
+}

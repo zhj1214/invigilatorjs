@@ -1,0 +1,178 @@
+.picker-container {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background-color: #fff;
+}
+
+.tab {
+  height: 120rpx;
+  font-size: 34rpx;
+  font-weight: 500;
+  color: #92969a;
+  padding: 0 32rpx;
+
+  .tab-item {
+    height: 100%;
+    margin-right: 48rpx;
+
+    &.active {
+      position: relative;
+      color: #292c2e;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 20rpx;
+        transform: translateX(-50%);
+        background-color: #292c2e;
+        border-radius: 2rpx;
+        width: 72rpx;
+        height: 4rpx;
+      }
+    }
+  }
+}
+
+.empty {
+  height: calc(70vh - 120rpx - 120rpx);
+  font-size: 26rpx;
+  color: #909ca8;
+
+  .image {
+    width: 144rpx;
+    height: 144rpx;
+    margin-bottom: 32rpx;
+  }
+}
+
+.picker-counter {
+  padding: 0 32rpx;
+  height: 77rpx;
+  font-size: 28rpx;
+  color: #92969a;
+  background-color: #f2f3f3;
+
+  .num {
+    margin: 0 10rpx;
+    color: #4e6175;
+  }
+}
+
+.scroll-content {
+  height: calc(70vh - 120rpx - 120rpx - 77rpx);
+}
+
+.coupon-list {
+  padding: 20rpx 0;
+
+  .coupon-item {
+    position: relative;
+    margin-bottom: 30rpx;
+
+    .bg-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 200rpx;
+    }
+
+    .coupon-info {
+      padding: 0 32rpx;
+      width: 100%;
+    }
+  }
+
+  .left {
+    position: relative;
+    font-size: 28rpx;
+    color: #fff;
+    height: 170rpx;
+    width: 30%;
+    z-index: 10;
+    text-align: center;
+
+    .symbol {
+      position: relative;
+      top: 22rpx;
+    }
+
+    .num {
+      font-size: 80rpx;
+      margin-left: 4rpx;
+    }
+
+    &.size-middle {
+      .symbol {
+        top: 12rpx;
+      }
+
+      .num {
+        font-size: 60rpx;
+      }
+    }
+
+    &.size-small {
+      .symbol {
+        top: 4rpx;
+      }
+
+      .num {
+        font-size: 46rpx;
+      }
+    }
+
+    &.size-mini {
+      .symbol {
+        top: 4rpx;
+      }
+
+      .num {
+        font-size: 40rpx;
+        max-width: 180rpx;
+      }
+    }
+  }
+
+  .right {
+    width: 70%;
+    margin-left: auto;
+    z-index: 10;
+    padding: 0 32rpx 0 20rpx;
+
+    .title {
+      line-height: 52rpx;
+      font-size: 30rpx;
+      font-weight: 500;
+      color: #1a1a1a;
+    }
+
+    .limit {
+      font-size: 24rpx;
+      line-height: 36rpx;
+      color: #909ca8;
+    }
+
+    .info {
+      width: 90%;
+    }
+
+    .operate {
+      flex-basis: 50rpx;
+    }
+  }
+}
+
+.footer {
+  height: 120rpx;
+  border-top: 1rpx solid #d8d8d8;
+
+  .btn {
+    background: #1a1a1a;
+    color: #fff;
+    width: 94%;
+    height: 84rpx;
+  }
+}

@@ -1,0 +1,11 @@
+*.js
+*.ts
+*.png
+*.woff
+*.md
+
+dist/
+src/components/uni-*/
+src/style/element.scss
+node_modules/
+index.html
